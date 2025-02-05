@@ -16,7 +16,7 @@
 // ===========================================
 
 
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 
 interface ProductReviewProps {
   params: Promise<{
@@ -30,7 +30,8 @@ export default async function ProductReview({ params }: ProductReviewProps) {
   const { productId, reviewId } = await params
 
   if (parseInt(reviewId) > 1000) {
-    notFound()
+    // notFound() // Show not-found page in /product/[productId]/review
+    redirect('/product') // redirect /product page 
   }
 
   return (<>
