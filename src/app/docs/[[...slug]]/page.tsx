@@ -17,6 +17,12 @@
 //   return <div>Docs</div>;
 // }
 
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Docs..."
+}
+
 
 interface DocsProps {
   params: Promise<{
@@ -26,8 +32,6 @@ interface DocsProps {
 
 export default async function Docs({ params }: DocsProps ) {
   const { slug } = await params
-
-  console.log({ slug })
 
   if (slug?.length === 2) {
     return <h1>{slug[0]} and {slug[1]}</h1>
