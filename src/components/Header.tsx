@@ -1,11 +1,6 @@
 export default function Header() {
   return <>
-    <nav 
-      style={{
-        background: "lightblue",
-        padding: "1rem",
-      }}
-    >
+    <nav className="bg-blue-200 p-4 text-center">
       Header
     </nav>
   </> 

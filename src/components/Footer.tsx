@@ -1,11 +1,6 @@
 export default function Footer() {
   return <>
-    <footer 
-      style={{
-        backgroundColor: "lightblue",
-        padding: "1rem",
-      }}
-    >
+    <footer className="bg-blue-200 p-4 text-center">
       Footer
     </footer>
   </> 

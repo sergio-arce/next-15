@@ -4,8 +4,10 @@
  */
 import Footer from "@/components/Footer"
 import Header from "@/components/Header"
+import './global.css'
 
 import { Metadata } from 'next'
+import { ErrorWrapper } from "./error-wrapper"
 
 
 export const metadata: Metadata = {
@@ -26,7 +28,9 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Header />
-        {children}
+          <ErrorWrapper>
+            {children}
+          </ErrorWrapper>
         <Footer />
       </body>
     </html>
