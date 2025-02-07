@@ -10,8 +10,6 @@ import { use } from "react" // important
  * - Es útil en componentes Client Components ('use client') donde se manejan datos asíncronos de manera más declarativa.
  */
 
-import "./styles.css"
-
 export default  function NewArticle({ params, searchParams }: { 
   params: Promise<{ articleId: string }>,
   searchParams: Promise<{ lang?: "en" | "es" | "fr" }>,
