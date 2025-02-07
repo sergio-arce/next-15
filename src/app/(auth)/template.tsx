@@ -8,7 +8,6 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import "./styles.css"
 import { useState } from "react"
 
 const navLinks = [

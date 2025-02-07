@@ -15,7 +15,7 @@ const ErrorSimulator = ({
   return (
     <button
       title="Simulate Error"
-      className="bg-red-950 text-red-500 rounded p-1 leading-none font-semibold"
+      className="bg-red-950 text-red-500 rounded-sm p-1 leading-none font-semibold"
       onClick={() => setError(true)}
     >
       Simulate Error
